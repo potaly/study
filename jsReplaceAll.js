@@ -1,9 +1,12 @@
-(function($, undefined) {
+(function(win, undefined) {
   /**
    * String replace加强版
    * @author yuanhongbo 
    * @createDate 2014-01-01
    */
+   	if(win.jQuick === undefined){
+   		var jQuick = win.jQuick = {};	
+   	}
 	var data, replaceCore = function(matchStr, matchVal) {
 		try {
 			return eval(matchVal);
@@ -27,7 +30,7 @@
 		}
 		return html.join('');
 	};
-	$.dataReplaceAll = function(opt) {
-		return dataTemplate(this, opt);
+	jQuick.replaceAll = function(str,opt) {
+		return dataTemplate(str, opt);
 	};
-})(String.prototype);
+})(window);
