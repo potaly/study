@@ -1,7 +1,7 @@
-DataReplaceAll
+jsReplaceAll
 ==============
 
-JavaScript replace增强函数dataReplaceAll
+JavaScript replace增强函数jQuick.replaceAll
 
 
 	var demoData = {
@@ -25,17 +25,17 @@ JavaScript replace增强函数dataReplaceAll
 
 	function demo1() {
 		var demo1 = document.getElementById("demo1");
-		demo1.innerHTML = demo1.innerHTML.dataReplaceAll(demoData);
+		demo1.innerHTML = jQuick.replaceAll(demo1.innerHTML,demoData);
 		demo1 = function(){alert('不要重复执行。')}
 	}
 
 	function demo2() {
 		var demo2 = document.getElementById("demo2");
-		demo2.innerHTML = demo2.innerHTML.dataReplaceAll(demoDataArray);
+		demo2.innerHTML = demo1.innerHTML(demo2.innerHTML,demoDataArray);
 		demo2 = function(){alert('不要重复执行。')}
 	}
 
-	<h3>dataReplaceAll Object Demo</h3>
+	<h3>jsReplaceAll Object Demo</h3>
 
 	Demo1:demo1();
 	<input type="button" value="run" onclick="demo1();" />
@@ -51,7 +51,7 @@ JavaScript replace增强函数dataReplaceAll
 		</ul>
 	</div>
 
-	<h3>dataReplaceAll Array Demo</h3>
+	<h3>jsReplaceAll Array Demo</h3>
 
 	Demo2:demo2();
 	<input type="button" value="run" onclick="demo2();" />
