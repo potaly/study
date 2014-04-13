@@ -4,3 +4,4 @@
 
 #oracle学习笔记
 [oracle行转列](https://github.com/hbyuan/study/tree/master/oracle/pivot)
+[oracle列转行](https://github.com/hbyuan/study/tree/master/oracle/unpivot)
