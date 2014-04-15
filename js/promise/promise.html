@@ -1,0 +1,38 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<script type="text/javascript" src="promise.js"></script>
+
+	<div id="console"></div>
+
+	<script type="text/javascript">
+		//定义一个基于Promise接口的异步函数
+			function asyncTest1(){
+				var p = new Promise();
+				setTimeout(function(){
+					console.log("task1 run;",new Date());
+					p.resolve('asyncTest1');
+				},3000);
+				return p;
+			}
+			
+			function asyncTest2(task1Val){
+				var p = new Promise();
+				setTimeout(function(){
+				console.log(task1Val);
+				console.log("task2 run;",new Date());
+				p.resolve('asyncTest2');
+				},3000);
+				return p;
+			}
+		
+			
+		asyncTest1().then(asyncTest2);
+	</script>
+</body>
+
+</html>
