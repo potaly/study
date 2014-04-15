@@ -10,3 +10,5 @@
 [oracle列转行](https://github.com/hbyuan/study/tree/master/oracle/unpivot)
 
 [公交换乘SQL](https://github.com/hbyuan/study/tree/master/oracle/busline)
+
+[Oracle查找锁&解除锁](https://github.com/hbyuan/study/tree/master/oracle/findlockandkill)
