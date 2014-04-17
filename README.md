@@ -1,6 +1,8 @@
-#js学习笔记
+#javascript学习笔记
 
-[jsReplaceAll javascript的replaceAll](https://github.com/hbyuan/study/tree/master/js/replaceAll)
+[replace扩展replaceAll](https://github.com/hbyuan/study/tree/master/js/replaceAll)
+
+[Promise模式](https://github.com/hbyuan/study/tree/master/js/promise)
 
 
 #oracle学习笔记
