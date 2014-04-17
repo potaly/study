@@ -1,8 +1,13 @@
 #javascript学习笔记
 
-[replace扩展replaceAll](https://github.com/hbyuan/study/tree/master/js/replaceAll)
+[replace函数实现简单模板引擎](https://github.com/hbyuan/study/tree/master/js/replaceAll)
 
-[Promise模式](https://github.com/hbyuan/study/tree/master/js/promise)
+[Promise模式简单实现](https://github.com/hbyuan/study/tree/master/js/promise)
+
+
+#java学习笔记
+
+[线程池原理](https://github.com/hbyuan/study/tree/master/java/threadpool)
 
 
 #oracle学习笔记
