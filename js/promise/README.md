@@ -29,25 +29,25 @@ javascript是单线程执行环境，所有的异步方法/函数调用后都只
 	
 ##定义两个基于Promise的异步函数
 
-			function asyncTest1(){
-				var p = new Promise();
-				setTimeout(function(){
-					console.log("task1 run;",new Date());
-					p.resolve('asyncTest1');
-				},3000);
-				return p;
-			}
-			
-			function asyncTest2(task1Val){
-				var p = new Promise();
-				setTimeout(function(){
-				console.log(task1Val);
-				console.log("task2 run;",new Date());
-				p.resolve('asyncTest2');
-				},3000);
-				return p;
-			}
+	function asyncTest1(){
+		var p = new Promise();
+		setTimeout(function(){
+			console.log("task1 run;",new Date());
+			p.resolve('asyncTest1');
+		},3000);
+		return p;
+	}
+
+	function asyncTest2(task1Val){
+		var p = new Promise();
+		setTimeout(function(){
+		console.log(task1Val);
+		console.log("task2 run;",new Date());
+		p.resolve('asyncTest2');
+		},3000);
+		return p;
+	}
 		
 ##使用Promise执行异步回调
 			
-		asyncTest1().then(asyncTest2);
+	asyncTest1().then(asyncTest2);
