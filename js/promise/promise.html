@@ -6,11 +6,8 @@
 
 <body>
 	<script type="text/javascript" src="promise.js"></script>
-
-	<div id="console"></div>
-
 	<script type="text/javascript">
-		//定义一个基于Promise接口的异步函数
+		//定义一个基于Promise的异步函数
 			function asyncTest1(){
 				var p = new Promise();
 				setTimeout(function(){
@@ -30,7 +27,7 @@
 				return p;
 			}
 		
-			
+		//使用Promise执行异步回调
 		asyncTest1().then(asyncTest2);
 	</script>
 </body>
