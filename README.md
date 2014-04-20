@@ -4,13 +4,11 @@
 
 [Promise模式简单实现](https://github.com/hbyuan/study/tree/master/js/promise)
 
+[《javascript秘密花园》](http://bonsaiden.github.io/JavaScript-Garden/zh/)
 
 #java学习笔记
 
 [线程池原理](https://github.com/hbyuan/study/tree/master/java/threadpool)
-
-[《javascript秘密花园》](http://bonsaiden.github.io/JavaScript-Garden/zh/)
-
 
 #oracle学习笔记
 
