@@ -1,6 +1,6 @@
 #JavaScript继承
 
-###使用prototype实现继承
+###JavaScript利用prototype实现继承
 
 	//定义接口
 	function Interface() {}

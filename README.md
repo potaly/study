@@ -8,11 +8,15 @@
 
 [node.js实现简单web服务器](https://github.com/hbyuan/study/tree/master/js/nodejshttpserver)
 
+[JavaScript利用prototype实现继承](https://github.com/hbyuan/study/tree/master/js/jsExtend)
+
 
 
 #java学习笔记
 
 [线程池原理](https://github.com/hbyuan/study/tree/master/java/threadpool)
+
+
 
 #oracle学习笔记
 
