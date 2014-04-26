@@ -27,6 +27,5 @@ console.log('i instanceof Interface:', i instanceof Interface); //true
 console.log('i instanceof InterfaceImplmethodOne:', i instanceof InterfaceImplmethodOne); //true
 console.log('i instanceof InterfaceImplmethodTwo:', i instanceof InterfaceImplmethodTwo); //false
 
-debugger;
 i.methodOne();
 i.methodTwo(); //error.
