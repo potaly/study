@@ -1,0 +1,38 @@
+<script type="text/javascript" src="jsTemplate.js"></script>
+
+<script type="text/jsTemplete" id="jsTemplate">
+	<h1>
+	<% if(x===y.x) {%>
+	Hello...
+	<%} else { %>
+	World...
+	<%}%>
+	</h1>
+</script>
+<script type="text/jsTemplete" id="jsTemplate2">
+	My skills:
+	<%for(var index in skills) {%>
+	<a href="#">
+		<%=skills[index]%>
+	</a>
+	<%}%>
+</script>
+
+<div id="html">
+
+</div>
+
+<div id="html2">
+
+</div>
+
+<script type="text/javascript">
+	JsTemplate.isDebug = true;
+	var tmpl = JsTemplate('jsTemplate');
+	document.getElementById("html").innerHTML=tmpl.render({x:123,y:{x:456}});
+	
+	var tmpl = JsTemplate('jsTemplate2');
+	document.getElementById("html2").innerHTML=tmpl.render({
+		skills: ["js", "html", "css"]
+	});
+</script>
