@@ -2,6 +2,8 @@
 
 [replace函数实现简单模板引擎](https://github.com/hbyuan/study/tree/master/js/replaceAll)
 
+[javascript模板引擎](https://github.com/hbyuan/study/tree/master/js/template)
+
 [Promise模式简单实现](https://github.com/hbyuan/study/tree/master/js/promise)
 
 [《javascript秘密花园》](http://bonsaiden.github.io/JavaScript-Garden/zh/)
