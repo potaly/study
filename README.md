@@ -1,8 +1,10 @@
 #javascript学习笔记
 
-[replace函数实现简单模板引擎](https://github.com/hbyuan/study/tree/master/js/replaceAll)
+[javascript模板引擎(JsTemplate)](https://github.com/hbyuan/jsTemplate)
 
-[javascript模板引擎](https://github.com/hbyuan/study/tree/master/js/template)
+[javascript流程控制工具(jsFlow)](https://github.com/hbyuan/jsFlow)
+
+[replace函数实现简单模板引擎](https://github.com/hbyuan/study/tree/master/js/replaceAll)
 
 [Promise模式简单实现](https://github.com/hbyuan/study/tree/master/js/promise)
 
