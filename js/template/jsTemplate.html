@@ -1,38 +1,57 @@
 <script type="text/javascript" src="jsTemplate.js"></script>
 
-<script type="text/jsTemplete" id="jsTemplate">
-	<h1>
-	<% if(x===y.x) {%>
-	Hello...
-	<%} else { %>
-	World...
-	<%}%>
-	</h1>
+<script type="text/jsTemplete" id="jsTemplate1">
+	<h1><%=name%></h1>
+	<h3><%=desc%></h3>
+	<% for(var i =0;i<datas.length;i++){ var data=datas[i];%>
+		<%=include('jsTemplate2',{data:data,index:i})%>
+		<%}%>
 </script>
 <script type="text/jsTemplete" id="jsTemplate2">
-	My skills:
-	<%for(var index in skills) {%>
-	<a href="#">
-		<%=skills[index]%>
-	</a>
-	<%}%>
+	<ul>
+			<li>index:<%=index%></li>
+			<li>intValue(数字):<%=data.intValue%></li>
+			<li>intValueAgain:<%=data.intValue + 1%></li>
+			<li>stringValue(字符串):<%=data.stringValue%></li>
+			<li>funcValue(函数):<%=data.funcValue()%></li>
+			<li>expression(表达式):<%=data.textProcess('0123456789')%></li>
+			<li>expression(表达式):<%=data.textProcess('0123')%></li>
+		</ul>
 </script>
 
 <div id="html">
 
 </div>
 
-<div id="html2">
-
-</div>
 
 <script type="text/javascript">
-	JsTemplate.isDebug = true;
-	var tmpl = JsTemplate('jsTemplate');
-	document.getElementById("html").innerHTML=tmpl.render({x:123,y:{x:456}});
-	
-	var tmpl = JsTemplate('jsTemplate2');
-	document.getElementById("html2").innerHTML=tmpl.render({
-		skills: ["js", "html", "css"]
-	});
+	//初始化模板
+	JsTemplate('jsTemplate1',document.getElementById('jsTemplate1').innerHTML);
+	JsTemplate('jsTemplate2',document.getElementById('jsTemplate2').innerHTML);
+</script>
+
+
+<script type="text/javascript">
+	var demoData = {
+			        		stringValue : "Hello, World I'm a String!",
+			        		intValue : 5,
+			        		funcValue : function() {
+			        			return '[func:(' + this.stringValue + this.intValue + ')]'
+			        		},
+			        		textProcess : function(str) {
+			        			if (str && str.length > this.intValue) {
+			        				return str.substr(0, this.intValue) + '...'
+			        			} else {
+			        				return str;
+			        			}
+			        		}
+			        	};
+	var demoDataArray = []; for ( var i = 1000; i--;) { demoDataArray.push(demoData); };
+
+	var data = {name:'JsTemplate',desc:'A fast javascript engine...',datas:demoDataArray};
+	var tmpl = JsTemplate('jsTemplate1');
+	var start = new Date().getTime();
+	document.getElementById("html").innerHTML=tmpl.render(data);
+	var end = new Date().getTime();
+	console.log('times:'+(end-start));
 </script>
