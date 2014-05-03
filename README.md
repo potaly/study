@@ -8,8 +8,6 @@
 
 [Promise模式简单实现](https://github.com/hbyuan/study/tree/master/js/promise)
 
-[《javascript秘密花园》](http://bonsaiden.github.io/JavaScript-Garden/zh/)
-
 [node.js实现简单web服务器](https://github.com/hbyuan/study/tree/master/js/nodejshttpserver)
 
 [JavaScript利用prototype实现继承](https://github.com/hbyuan/study/tree/master/js/jsExtend)
@@ -31,3 +29,10 @@
 [公交换乘SQL](https://github.com/hbyuan/study/tree/master/oracle/busline)
 
 [Oracle查找锁&解除锁](https://github.com/hbyuan/study/tree/master/oracle/findlockandkill)
+
+
+#推荐
+
+[javascript秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/)
+
+[正则表达式30分钟入门教程](http://deerchao.net/tutorials/regex/regex.htm)
