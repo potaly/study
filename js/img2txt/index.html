@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>图片转字符</title>
+</head>
+
+<body>
+	<div>
+		<input type="file" name="file" id="button" />
+	</div>
+	<div id="txt"></div>
+	<script src="src/img2txt.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var txtDiv = document.getElementById('txt');
+		var fileBtn = document.getElementById("button");
+		var img = new Image();
+		img.onload = function () {
+			txtDiv.style.width = img.width + 'px';
+			var imgData = getImgData(img);
+			var imgTxt = getImgTxt(imgData);
+			txtDiv.innerHTML = imgTxt;
+		};
+		fileBtn.onchange = function () {
+			var reader = new FileReader();
+			reader.readAsDataURL(fileBtn.files[0]);
+			reader.onload = function () {
+				img.src = reader.result;
+			}
+		};
+	</script>
+
+</body>
+
+</html>
