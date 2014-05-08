@@ -12,6 +12,8 @@
 
 [【javascript】利用prototype实现继承](https://github.com/hbyuan/study/tree/master/js/jsExtend)
 
+[【javascript】图片转字符](https://github.com/hbyuan/study/tree/master/js/img2txt)
+
 [【java】线程池原理](https://github.com/hbyuan/study/tree/master/java/threadpool)
 
 [【oracle】行转列](https://github.com/hbyuan/study/tree/master/oracle/pivot)
