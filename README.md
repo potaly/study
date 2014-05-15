@@ -1,4 +1,4 @@
-#学习笔记
+#学习
 
 [【javascript】模板引擎(JsTemplate)](https://github.com/hbyuan/jsTemplate)
 
