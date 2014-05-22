@@ -28,6 +28,8 @@
 
 [【regexp】jquery中的正则表达式](https://github.com/hbyuan/study/tree/master/regexp/jquery)
 
+[【regexp】正则表达式的贪婪与懒惰模式](https://github.com/hbyuan/study/tree/master/regexp/greedyandlazy)
+
 
 #推荐
 
