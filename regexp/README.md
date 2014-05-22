@@ -7,6 +7,10 @@
 
 [jquery中的正则表达式](https://github.com/hbyuan/study/tree/master/regexp/jquery)
 
+[正则表达式的贪婪与懒惰模式](https://github.com/hbyuan/study/tree/master/regexp/greedyandlazy)
+
+[正则表达式零宽断言](https://github.com/hbyuan/study/tree/master/regexp/zerowithassert)
+
 ##表达式全集
 
 <table border="1px">
